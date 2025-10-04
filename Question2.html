@@ -2,7 +2,8 @@
 <html lang="en">    
     <head> <script src="https://cdn.tailwindcss.com"></script></head>
 
-        <body class="bg-red-100">
+        <body class="bg-red-100"
+        >
            <label for="Num1">Num1 </label>
               <input class="bg-green-200" id="number" type="text"> <br><br>
 
@@ -10,14 +11,18 @@
                 <input class="bg-green-200" id="number" type="text"> <br><br>
 
             <label for="result">Result</label>
-                <input class="bg-green-200" id="result" type="text" readonly><br>
+                <input class="bg-green-200" id="result" type="text" readonly><br><br>
 
             <button class="bg-green-500" 
-            onclick="document.getElementById('result').value  = Number(document.getElementById('Num1').value) + Number(document.getElementById('Num2').value)"> 
+            onclick="document.getElementById('result').value = 
+                Number(document.getElementById('Num1').value) + 
+                Number(document.getElementById('Num2').value)">
             Add</button>
 
-            <button class="bg-red-500" 
-            onclick="document.getElementById('result').value  = Number(document.getElementById('Num1').value) - Number(document.getElementById('Num2').value)">
+             <button class="bg-green-500" 
+            onclick="document.getElementById('result').value = 
+                Number(document.getElementById('Num1').value) - 
+                Number(document.getElementById('Num2').value)">
             Sub</button>
         </body>
     
