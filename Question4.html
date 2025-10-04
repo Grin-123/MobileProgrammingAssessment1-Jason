@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">    
+    <head> <script src="https://cdn.tailwindcss.com"></script></head>
+
+        <body class="bg-red-100"
+        >
+           <label for="Length">Length </label>
+              <input class="bg-green-200" id="Length" type="text"> <br><br>
+
+           <label for="Width">Width</label>
+                <input class="bg-green-200" id="Width" type="text"> <br><br>
+
+            <label for="result">Area</label>
+                <input class="bg-green-200" id="result" type="text" readonly><br><br>
+
+            <!--Operations part:-->
+            <div class="mt-2 flex flex-wrap items-center gap-3">    
+                <label>Operation:</label> <br>
+
+                
+                <label> Area: </label><input type="checkbox" name="operation" onclick=
+                "document.getElementById('Area').value = 
+                    Number(document.getElementById('Length').value) *
+                    Number(document.getElementById('Width').value)">
+                
+        </body>
+    
+</html>
